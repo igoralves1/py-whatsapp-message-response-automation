@@ -1,7 +1,7 @@
 # py-whatsapp-message-response-automation
 
 
-# VENV
+# VENV - [Link In Slack](https://igoralves1workspace.slack.com/archives/C0183R7BVQA/p1656952610943069)
 - Check if venv is installed:
 ```
 pip3 list
@@ -50,8 +50,31 @@ Intall dependencies:
 > sudo apt-get install python3-tk python3-dev
 > ```
 
-1. OpenCV
+On python 3.8.4 got this issue inside the environment
 ```
+$ python3 whatsapp_bot.py
+
+NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev
+
+$ sudo apt-get install python3-tk python3-dev
+
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+python3-dev is already the newest version (3.10.4-0ubuntu2).
+python3-tk is already the newest version (3.10.4-0ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+
+$ python3 whatsapp_bot.py still throwing same issue.
+
+NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev
+
+$ apt-get install python-tk # works
+
+```
+
+1. OpenCV
+
 pip3 install opencv-python
 
 Collecting opencv-python
